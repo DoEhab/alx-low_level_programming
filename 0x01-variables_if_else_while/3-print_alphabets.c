@@ -10,10 +10,9 @@
 int main(void)
 {
 	int i;
-	char alphabets[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	
+	char alphabets[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";	
 	for (i = 0; i < 52; i++)
-		putchar(alphabets[i]);	
+		putchar(alphabets[i]);
 	putchar('\n');
 	return (0);
 }
