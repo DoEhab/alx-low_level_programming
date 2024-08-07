@@ -1,6 +1,13 @@
 #include<stdio.h>
 
-int main (void)
+/**
+ * main - Entry point
+ *
+ * Description: 'print data types size'
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
 {
 	printf("Size of a char: %lu byte(s) \n", (unsigned long) sizeof(char));
 	printf("Size of a int: %lu byte(s)\n", (unsigned long) sizeof(int));
