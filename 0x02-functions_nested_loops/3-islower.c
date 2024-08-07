@@ -4,7 +4,7 @@
 /**
   * _islower - return if lower case digit
   *
-  * @c; char to be checked
+  * @c: char to be checked
   * Return: 1 if lower case and zero if not
   */
 
