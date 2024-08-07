@@ -11,13 +11,13 @@
 int main(void)
 {
 	int i;
-        char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-        
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+
 	for (i = 0; i < 26; i++)
 	{
-		if (alphabet[i]!='q' && alphabet[i] != 'e')
+		if (alphabet[i]!='q' && alphabet[i]!='e')
 			putchar(alphabet[i]);
-        }
+	}
 	putchar('\n');
 	return (0);
 }
