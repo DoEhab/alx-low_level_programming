@@ -19,9 +19,9 @@ void jack_bauer(void)
 		{
 			if (hours_counter < 10)
 				printf("0%d:", hours_counter);
-			else 
+			else
 				printf("%d:", hours_counter);
-			if(minutes_counter < 10)
+			if (minutes_counter < 10)
 				printf("0%d", minutes_counter);
 			else
 				printf("%d", minutes_counter);
