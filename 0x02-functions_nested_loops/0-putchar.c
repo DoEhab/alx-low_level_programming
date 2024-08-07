@@ -1,7 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 
-int main (void)
+/**
+  * main - Entry point
+  *
+  * Description: 'print using putchar'
+  * Return: Always 0 (Success)
+  */
+
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
