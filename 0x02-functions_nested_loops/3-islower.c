@@ -2,16 +2,16 @@
 #include <ctype.h>
 
 /**
-  * _islower - Entry point
+  * _islower - return if lower case digit
   *
-  * Description: 'check lower case'
-  * Return: Always 0 (Success)
+  * @c; char to be checked
+  * Return: 1 if lower case and zero if not
   */
 
 int _islower(int c)
 {
 	if (islower(c))
-		return 1;
-	else 
-		return 0;
+		return (1);
+	else
+		return (0);
 }
