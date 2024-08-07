@@ -10,8 +10,8 @@
 int main(void)
 {
 	int i;
-
 	char alphabt[] = "abcdefghijklmnopqrstuvwxyz";
+
 	for (i = 25; i >= 0; i--)
 		putchar(alphabt[i]);
 
