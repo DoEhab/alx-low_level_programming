@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
-  * strlen - return string lenght
+  * _strlen - return string lenght
   *
   * @s: pointer to char array
   * Return: return lenght of char array
@@ -16,5 +16,5 @@ int _strlen(char *s)
 	for (i = 0; s[i]; i++)
 		len++;
 
-	return len;
+	return (len);
 }
