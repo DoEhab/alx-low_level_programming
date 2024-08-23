@@ -21,7 +21,7 @@ void puts_half(char *str)
 	if ((len / 2) % 2 == 0)
 		start_index = len / 2;
 	else
-		start_index = (len + 1) / 2;
+		start_index = ((len + 1) / 2) - 1;
 	
 	for (i = start_index ; i < len; i++)
 		_putchar(str[i]);
