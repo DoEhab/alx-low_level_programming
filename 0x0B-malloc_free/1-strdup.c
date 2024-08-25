@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+  * strdup - copies data from one pointer to another
+  *
+  * @str: pointer to copy the data from
+  * Return: new pointer with duplicate data
+  */
+
 char *_strdup(char *str)
 {
 	int len, index = 0;
@@ -14,6 +21,9 @@ char *_strdup(char *str)
 		len++;
 
 	new_str = malloc((len) * sizeof(char));
+
+	if (new_str == NULL)
+		return (NULL);
 
 	for (index = 0; str[index]; index++)
 		new_str[index] = str[index];
