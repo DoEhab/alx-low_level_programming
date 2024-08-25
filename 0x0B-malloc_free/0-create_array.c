@@ -6,6 +6,7 @@
   *
   * @size: size of array
   * @c: char to be initialize the array
+  *
   * Return: pointer to char array
   */
 
