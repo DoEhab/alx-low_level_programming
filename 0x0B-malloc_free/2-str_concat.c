@@ -1,9 +1,18 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+  * str_concat - concatenate 2 strings
+  *
+  * @s1: first char array
+  * @s2: second char array
+  * Return: pointer to concatenated char array
+  */
+
 char *str_concat(char *s1, char *s2)
 {
-	int len_1, len_2 = 0;
+	int len_1 = 0;
+	int len_2 = 0;
 	int i;
 	char *result;
 
@@ -14,6 +23,9 @@ char *str_concat(char *s1, char *s2)
 		len_2++;
 
 	result = malloc((len_1 + len_2) * sizeof(char));
+
+	if (result == NULL)
+		return (NULL);
 
 	for (i = 0; i < len_1; i++)
 		result[i] = s1[i];
