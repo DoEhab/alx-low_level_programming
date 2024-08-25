@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-  * strdup - copies data from one pointer to another
+  * _strdup - copies data from one pointer to another
   *
   * @str: pointer to copy the data from
   * Return: new pointer with duplicate data
@@ -20,7 +20,7 @@ char *_strdup(char *str)
 	for (index = 0; str[index]; index++)
 		len++;
 
-	new_str = malloc((len) * sizeof(char));
+	new_str = malloc(len * sizeof(char));
 
 	if (new_str == NULL)
 		return (NULL);
