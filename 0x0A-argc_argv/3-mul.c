@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc < 2)
+	if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 	{
 		int x = atoi(argv[argc - 2]);
 		int y = atoi(argv[argc - 1]);
+
 		printf("%d\n", x * y);
 	}
 	return (0);
