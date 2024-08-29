@@ -1,17 +1,27 @@
 #include "main.h"
 #include <stddef.h>
 
-char *_strchr(char *s, char c)
-{	
-	char *result = NULL;
+/**
+  * _strchr - return string based on first appearance of char
+  *
+  * @s: char array
+  * @c: char to check
+  * Return: null if char not found and array if found
+  */
 
-	while (s)
+char *_strchr(char *s, char c)
+{
+	char *result = NULL;
+	int i;
+
+	for (i = 0; s[i]; i++)
 	{
-		if (*s == c)
+		if (s[i] == c)
 		{
-			return s;
+			s = s + i;
+			return (s);
 		}
-		s++;
 	}
-	return result;
+
+	return (result);
 }
