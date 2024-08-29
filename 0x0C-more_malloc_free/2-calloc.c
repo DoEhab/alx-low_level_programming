@@ -1,10 +1,12 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *mem;
 	char *arr;
-	int i;
+	unsigned int i;
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
@@ -15,7 +17,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return NULL;
 
 	arr = mem;
-	if (i = 0; i < nmemb * size; i++)
+
+	for (i = 0; i < (nmemb * size); i++)
 		arr[i] = '\0';
 
 	return (mem);
