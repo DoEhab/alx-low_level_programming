@@ -14,13 +14,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i;
 	unsigned int len = 0;
+	unsigned int len_2 = 0;
 	int result_index = 0;
 	char *result;
 
 	for (i = 0; s1[i]; i++)
 		len++;
 
+	for (i = 0; s2[i]; i++)
+		len_2++;
+
+	if (n >= len_2)
+		return (s2);
+
 	result = malloc((len + n) * sizeof(char));
+
+	if (result == NULL)
+		return (NULL);
 
 	for (i = 0; s1[i]; i++)
 		result[result_index++] = s1[i];
