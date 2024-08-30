@@ -1,2 +1,1 @@
-shell basics
-Task 0 
+shell tasks
