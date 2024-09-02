@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-  * print_numbers - print numbers separated
+  * print_strings - print numbers separated
   *
   * @separator: separator char between nums
   * @n: number of args
@@ -22,8 +22,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		result = va_arg(args, char*);
 		printf("%s", result);
 		if (separator == NULL)
-			continue;
-		if (i < n - 1)
+			printf("nil")
+		else if (i < n - 1)
 			printf("%s", separator);
 	}
 	printf("\n");
