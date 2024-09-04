@@ -5,7 +5,7 @@
   * sum_them_all - returns the sum of all param
   *
   * @n: first param
-  * Return: return sum of params
+  * Return: return sum of param
   */
 
 int sum_them_all(const unsigned int n, ...)
