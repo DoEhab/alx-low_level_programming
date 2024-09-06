@@ -2,6 +2,12 @@
 #include <stddef.h>
 #include <stdio.h>
 
+/**
+  * binary_to_uint - convert binary to decimal
+  *
+  * @b: binary number
+  * Return: base 10 number
+  */
 unsigned int binary_to_uint(const char *b)
 {
 	int i;
@@ -11,17 +17,17 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 		return (0);
-	
+
 	for (len = 0; b[len];)
 		len++;
 
 	i = len;
-	for (i -=1; i >= 0; i--)
+	for (i -= 1; i >= 0; i--)
 	{
 		if (b[i] == '0' || b[i] == '1')
 		{	int bit = b[i] - '0';
 			result += bit * power_two;
-			power_two = power_two * 2; 
+			power_two = power_two * 2;
 		}
 		else
 			return (0);
