@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "lists.h"
 
+/**
+  * print_list - print node values
+  *
+  * @h: pointer to the first node
+  * Return: number of nodes
+  */
+
 size_t print_list(const list_t *h)
 {
 	size_t list_num = 0;
@@ -16,5 +23,5 @@ size_t print_list(const list_t *h)
 		list_num += 1;
 	}
 
-	return list_num;
+	return (list_num);
 }
