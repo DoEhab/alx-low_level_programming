@@ -7,7 +7,6 @@
   * @str: sring value
   * @len: int value
   * @next: pointer to next node
-  * 
   */
 
 typedef struct list_t
