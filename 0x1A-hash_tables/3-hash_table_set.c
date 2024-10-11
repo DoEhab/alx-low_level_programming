@@ -1,5 +1,15 @@
 #include "hash_tables.h"
 
+/**
+  * hash_table_set - set item in hash table
+  *
+  * @ht: hash table
+  * @key: hash key
+  * @value: item value
+  *
+  * Return: 0 in case of failure and 1 in success
+  */
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	int index = 0;
