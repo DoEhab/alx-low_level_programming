@@ -21,10 +21,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((const unsigned char *)key, ht->size);
 	hash_node->key = strdup(key);
 	if (hash_node->key == NULL)
+		free(hash_node);
 		return (0);
 
 	hash_node->value = strdup(value);
 	if (hash_node->value == NULL)
+		free(key);
+		free(hash_node);
 		return (0);
 
 	hash_node->next = ht->array[index];
