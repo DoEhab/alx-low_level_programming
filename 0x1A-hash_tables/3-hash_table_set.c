@@ -27,12 +27,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (hash_node->value == NULL)
 		return (0);
 
-	if (hash_node == NULL)
-	{
-		free(key);
-		free(value);
-		return (0);
-	}
+
 	hash_node->next = ht->array[index];
 	ht->array[index] = hash_node;
 	return (1);
