@@ -1,0 +1,21 @@
+#include "hash_tables.h"
+
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+{
+	int index = 0;
+	hash_node_t *hash_node = malloc(sizeof(hash_node_t));
+	index = key_index((const unsigned char *)key, ht->size);
+	if (ht == NULL || key == NULL)
+		return (0);
+	
+	hash_node->key = strdup(key);
+	if (hash_node->key == NULL)
+		return (0);
+
+	hash_node->value = strdup(value);
+	if (hash_node->value == NULL)
+		return (0);
+
+	hash_node->next = ht->array[index];
+	return (1);
+}
