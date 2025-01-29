@@ -1,6 +1,7 @@
 #include<stdio.h>
+
 /**                                                                             
- * binary_search - use binary search alg for search                    
+ * binary_search: - use binary search alg for search                    
  * @array: int - array to be serched                                            
  * @size: the size of the array                                                
  * @value: the target value                                           
