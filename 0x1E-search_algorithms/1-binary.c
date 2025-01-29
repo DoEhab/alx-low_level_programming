@@ -6,7 +6,8 @@
  * @size: the size of the array                                                
  * @value: the target value                                           
  *                                                                              
- * Description: binary search algorith impl                                                        
+ * Description: binary search algorith impl
+ * Return: index if found, -1 otherwise                                                        
  */
 int binary_search(int *array, size_t size, int value)
 {
